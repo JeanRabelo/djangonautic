@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Artigos tops</title>
+  </head>
+  <body>
+    <h1>Segue abaixo a lista de artigos</h1>
+    <div class="artigos">
+      {% for artigo in lista_de_artigos %}
+      <div class="artigo">
+        <h1>{{artigo.titulo}}</h1>
+        <h2>{{artigo.slug}}</h2>
+        <p>{{artigo.body}}</p>
+        <h4>{{artigo.hora}}</h4>
+      </div>
+      {% endfor %}
+    </div>
+
+  </body>
+</html>
