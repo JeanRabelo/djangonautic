@@ -2,13 +2,14 @@
 <html lang="pt" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Titulo maneiro para a pagina</title>
+    <title>Aba</title>
   </head>
   <body>
-    <p>Aquela parte que tem o "p"</p>
-    <h1>Aga 1</h1>
-    <h2>Aga 2</h2>
-    <h3>Aga 3</h3>
-    <h4>E assim por diante...</h4>
+    <h1>Pagina inicial</h1>
+    <p>Bem vindo ao site</p>
+    <p><a href="{% url 'articles:list' %}">Articles list</a></p>
+    <p><a href="{% url 'articles:create' %}">Create article</a></p>
+    <p><a href="{% url 'accounts:signup'%}">Signup</a></p>
+    <p><a href="{% url 'accounts:login'%}">Login</a></p>
   </body>
 </html>
